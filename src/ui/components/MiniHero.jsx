@@ -1,0 +1,10 @@
+export default function MiniHero(props) {
+  return (
+    <div className="min-h-[60vh] w-full bg-[url('/images/gym-hero.webp')] bg-no-repeat bg-cover bg-center z-10 relative">
+      <div className="absolute top-0 w-full h-full bg-primary-900/40" />
+      <h4 className="absolute bottom-0 lg:left-[10%] left-0 md:text-6xl text-3xl text-shadow-ctext text-shadow-md text-secondary-light font-semibold pb-2 italic pl-4">
+        {props.title}
+      </h4>
+    </div>
+  );
+}
