@@ -1,24 +1,34 @@
 import { Footer, Header } from '@/ui';
 import './globals.css';
-import { DM_Serif_Display, Roboto_Mono } from 'next/font/google';
 import GoogleAnalytics from '@/ui/components/GoogleAnalytics';
 import CookiesProvider from '@/providers/CookiesProvider';
+import localFont from 'next/font/local';
 
-const display = DM_Serif_Display({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-display',
+const euxoi = localFont({
+  src: [
+    {
+      path: '../../public/fonts/euxoi.ttf',
+      weight: '400',
+      declarations: [{ prop: 'font-stretch', value: 'condensed' }],
+    },
+  ],
+  variable: '--font-euxoi',
 });
-const roboto = Roboto_Mono({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-roboto',
+const pokemon = localFont({
+  src: [
+    {
+      path: '../../public/fonts/pokemon.ttf',
+      weight: '400',
+    },
+  ],
+  variable: '--font-pokemon',
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${display.variable} ${roboto.variable}`}>
+      <body
+        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon`}>
         <GoogleAnalytics />
         <CookiesProvider />
         <Header />

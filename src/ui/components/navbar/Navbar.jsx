@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="z-50 fixed top-8 translate-x-1/2 right-1/2 rounded-3xl px-8 w-[80%] backdrop-blur-lg bg-primary/25">
+    <div className="font-pokemon z-50 fixed top-8 translate-x-1/2 right-1/2 rounded-3xl px-8 w-[80%] backdrop-blur-lg bg-primary/25">
       <div className="flex justify-between items-center h-16">
         {/* Logo */}
         <Logo />
