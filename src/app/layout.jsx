@@ -1,4 +1,4 @@
-import { Footer, Header } from '@/ui';
+import { Footer, Header, BgImage } from '@/ui';
 import './globals.css';
 import GoogleAnalytics from '@/ui/components/GoogleAnalytics';
 import CookiesProvider from '@/providers/CookiesProvider';
@@ -28,10 +28,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon`}>
+        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon`}>
+        <BgImage />
         <GoogleAnalytics />
         <CookiesProvider />
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </body>

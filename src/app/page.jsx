@@ -2,10 +2,8 @@ import { Hero } from '@/ui';
 
 export default function Home() {
   return (
-    <div>
-      <main className="font-pokemon">
-        <Hero />
-      </main>
-    </div>
+    <main className="font-pokemon relative z-20">
+      <Hero />
+    </main>
   );
 }

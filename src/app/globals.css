@@ -7,7 +7,7 @@
   --font-euxoi: var(--font-euxoi);
   --font-pokemon: var(--font-pokemon);
   /* Other */
-  --tracking-pokemon: -1px;
+  --tracking-pokemon: -2px;
   --tracking-euxoi: 1px;
 }
 
