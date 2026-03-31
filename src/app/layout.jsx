@@ -1,8 +1,8 @@
-import { Footer, Header, BgImage } from '@/ui';
+import { Footer, Header, BgImage, Toggles } from '@/ui';
 import './globals.css';
 import GoogleAnalytics from '@/ui/components/GoogleAnalytics';
-import CookiesProvider from '@/providers/CookiesProvider';
 import localFont from 'next/font/local';
+import { NextIntlClientProvider } from 'next-intl';
 
 const euxoi = localFont({
   src: [
@@ -31,9 +31,8 @@ export default function RootLayout({ children }) {
         className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon`}>
         <BgImage />
         <GoogleAnalytics />
-        <CookiesProvider />
-        {/* <Header /> */}
-        {children}
+        <Toggles />
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Footer />
       </body>
     </html>
