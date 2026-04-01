@@ -1,8 +1,9 @@
-import { Footer, Toggles } from '@/ui';
+import { Footer, Toggles, Sidebar, SideInfo, BgCover } from '@/ui';
 import './globals.css';
 import GoogleAnalytics from '@/ui/components/GoogleAnalytics';
 import localFont from 'next/font/local';
 import { NextIntlClientProvider } from 'next-intl';
+import { ThemeProvider } from 'next-themes';
 
 const euxoi = localFont({
   src: [
@@ -28,12 +29,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon bg-[url('/images/noise.jpg')] bg-no-repeat bg-cover bg-fixed bg-center`}>
-        {/* <BgImage /> */}
-        <GoogleAnalytics />
-        <Toggles />
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        <Footer />
+        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon bg-[url('/images/bg.jfif')] py-[10%] px-[15%] bg-no-repeat bg-fixed bg-cover bg-right`}>
+        <ThemeProvider attribute={'class'}>
+          <BgCover />
+          <GoogleAnalytics />
+          <Toggles />
+          <div className="grid grid-cols-12">
+            <Sidebar />
+            <NextIntlClientProvider>{children}</NextIntlClientProvider>
+            <SideInfo />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

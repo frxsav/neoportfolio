@@ -9,5 +9,5 @@ export async function setLanguage(lang) {
 
 export async function getlanguage() {
   const store = await cookies();
-  return store.get('locale').value;
+  return store.get('locale')?.value;
 }

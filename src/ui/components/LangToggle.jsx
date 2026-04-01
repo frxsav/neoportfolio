@@ -16,9 +16,9 @@ export default function LangToggle(props) {
             ? '/images/italy-flag.webp'
             : '/images/uk-flag.webp'
         }
-        width={75}
-        height={75}
-        alt={props.language === 'en' ? 'United Kingdom Flag' : 'Italy Flag'}
+        width={50}
+        height={50}
+        alt="Language toggler flag"
       />
     </button>
   );
