@@ -1,25 +1,14 @@
-'use client';
+'use server';
 
-import { setLanguage } from '@/lib/actions';
+import { getlanguage } from '@/lib/actions';
+import { LangToggle } from '@/ui';
 
-export default function Toggles() {
+export default async function Toggles() {
+  const lang = await getlanguage();
   return (
-    <div className="relative float-right p-3 flex gap-4">
+    <div className="relative float-right">
       {/* Qui farò i toggle per dark mode, lingua e suoni */}
-      <button
-        onClick={() => {
-          setLanguage('it');
-        }}
-        className="bg-red-500/80 p-4 cursor-pointer">
-        {' '}
-        Italiano
-      </button>
-      <button
-        onClick={() => setLanguage('en')}
-        className="bg-red-500/80 p-4 cursor-pointer">
-        {' '}
-        English
-      </button>
+      <LangToggle language={lang} />
     </div>
   );
 }

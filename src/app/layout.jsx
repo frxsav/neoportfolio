@@ -1,4 +1,4 @@
-import { Footer, Header, BgImage, Toggles } from '@/ui';
+import { Footer, Toggles } from '@/ui';
 import './globals.css';
 import GoogleAnalytics from '@/ui/components/GoogleAnalytics';
 import localFont from 'next/font/local';
@@ -28,8 +28,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon`}>
-        <BgImage />
+        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon bg-[url('/images/noise.jpg')] bg-no-repeat bg-cover bg-fixed bg-center`}>
+        {/* <BgImage /> */}
         <GoogleAnalytics />
         <Toggles />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
