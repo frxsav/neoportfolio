@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
           <div className="grid grid-cols-12">
             <Sidebar />
             <NextIntlClientProvider>{children}</NextIntlClientProvider>
-            <SideInfo />
+            {/* <SideInfo /> */}
           </div>
         </ThemeProvider>
       </body>

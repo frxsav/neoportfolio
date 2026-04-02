@@ -10,16 +10,21 @@ export default function LangToggle(props) {
         setLanguage(props.language === 'it' ? 'en' : 'it');
       }}
       className="cursor-pointer">
-      <Image
-        src={
-          props.language === 'en'
-            ? '/images/italy-flag.webp'
-            : '/images/uk-flag.webp'
-        }
-        width={50}
-        height={50}
-        alt="Language toggler flag"
-      />
+            {props.language === 'en' ? (
+              <Image
+                src={'/images/italy-flag.webp'}
+                width={70}
+                height={70}
+                alt="Language toggler flag Italy"
+              />
+            ) : (
+              <Image
+                src={'/images/uk-flag.webp'}
+                width={70}
+                height={70}
+                alt="Language toggler flag UK"
+              />
+            )}
     </button>
   );
 }

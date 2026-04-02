@@ -1,9 +1,27 @@
 {
+  "general": {
+    "and": "e"
+  },
   "sidebar": {
     "homepage": "Homepage",
     "about": "Chi Sono"
   },
   "homepage": {
-    "title": "Titolo di prova"
+    "title": "Titolo di prova",
+    "sections": {
+      "first": {
+        "title": "Benvenuti sul mio sito !!",
+        "dsc": "Lo scopo di tutto ciò è creare un mio spazio personale libero da algoritmi, standard, best practices e qualsiasi limitazione alla creatività del web design moderno.",
+        "expectations": {
+          "question": "Cosa aspettarsi?",
+          "answer": "Metterò praticamente tutto ciò che anche vagamente mi interessa, da contenuti sui videogiochi, sugli anime a qualsiasi nuovo hobby che durerà 2 giorni."
+        },
+        "shotout": {
+          "text1": "Grazie a ",
+          "text2": " e all' ",
+          "text3": " per avermi fatto scoprire un mondo nuovo del web che prima ignoravo, senza il quale avrei fatto il solito blog palloso come tutti gli altri."
+        }
+      }
+    }
   }
 }

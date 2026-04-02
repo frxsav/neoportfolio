@@ -2,7 +2,7 @@ import { Homepage } from '@/ui';
 
 export default function Home() {
   return (
-    <main className="font-pokemon col-span-8">
+    <main className="font-euxoi tracking-euxoi col-span-9">
       <Homepage />
     </main>
   );

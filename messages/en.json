@@ -4,6 +4,21 @@
     "about": "Chi Sono"
   },
   "homepage": {
-    "title": "Fake title"
+    "title": "Test title",
+    "sections": {
+      "first": {
+        "title": "Welcome to my website ! ! ! !",
+        "dsc": "The goal here is to create my personal space, free from algorithms, standard, best practices or any creativity limit of modern web design world.",
+        "expectations": {
+          "question": "Cosa aspettarsi?",
+          "answer": "Metterò praticamente tutto ciò che anche vagamente mi interessa, da contenuti sui videogiochi, sugli anime a qualsiasi nuovo hobby che durerà 2 giorni."
+        },
+        "shotout": {
+          "text1": "Un grande ringraziamento a ",
+          "text2": " ed all' ",
+          "text3": " in generale per avermi fatto scoprire un mondo nuovo del web che prima ignoravo, senza il quale avrei fatto il solito blog palloso come tutti gli altri."
+        }
+      }
+    }
   }
 }
