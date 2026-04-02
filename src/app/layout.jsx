@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon bg-[url('/images/bg.jfif')] py-[10%] px-[15%] bg-no-repeat bg-fixed bg-cover bg-right`}>
+        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon bg-[url('/images/bg.webp')] py-[10%] px-[15%] bg-no-repeat bg-fixed bg-cover bg-right`}>
         <ThemeProvider attribute={'class'}>
           <BgCover />
           <GoogleAnalytics />

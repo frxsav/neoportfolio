@@ -12,16 +12,21 @@ export default function ThemeToggle() {
         setTheme(theme === 'dark' ? 'light' : 'dark');
       }}
       className="p-2 cursor-pointer">
-      <Image
-        src={
-          theme === 'dark'
-            ? '/images/soul-eater-sun.webp'
-            : '/images/soul-eater-moon.webp'
-        }
-        width={50}
-        height={50}
-        alt="Theme toggler image"
-      />
+      {theme === 'dark' ? (
+        <Image
+          src={'/images/soul-eater-sun.webp'}
+          width={50}
+          height={50}
+          alt="Theme toggler image"
+        />
+      ) : (
+        <Image
+          src={'/images/soul-eater-moon.webp'}
+          width={50}
+          height={50}
+          alt="Theme toggler image"
+        />
+      )}
     </button>
   );
 }
