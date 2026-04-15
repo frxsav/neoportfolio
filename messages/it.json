@@ -1,7 +1,4 @@
 {
-  "general": {
-    "and": "e"
-  },
   "sidebar": {
     "homepage": "Homepage",
     "about": "Chi Sono"
@@ -14,7 +11,7 @@
         "dsc": "Lo scopo di tutto ciò è creare un mio spazio personale libero da algoritmi, standard, best practices e qualsiasi limitazione alla creatività del web design moderno.",
         "expectations": {
           "question": "Cosa aspettarsi?",
-          "answer": "Metterò praticamente tutto ciò che anche vagamente mi interessa, da contenuti sui videogiochi, sugli anime a qualsiasi nuovo hobby che durerà 2 giorni."
+          "answer": "Un deep dive nel mio cervello, metterò tutto quello che mi andrà di mettere, da contenuti sui videogiochi, sugli anime a qualsiasi nuovo hobby che durerà 2 giorni."
         },
         "shotout": {
           "text1": "Grazie a ",

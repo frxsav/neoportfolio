@@ -10,13 +10,13 @@
         "title": "Welcome to my website ! ! ! !",
         "dsc": "The goal here is to create my personal space, free from algorithms, standard, best practices or any creativity limit of modern web design world.",
         "expectations": {
-          "question": "Cosa aspettarsi?",
-          "answer": "Metterò praticamente tutto ciò che anche vagamente mi interessa, da contenuti sui videogiochi, sugli anime a qualsiasi nuovo hobby che durerà 2 giorni."
+          "question": "What to expect?",
+          "answer": "A deep dive into my brain. I'll put whatever I'll feel to put in here, from content about videogames or anime to any new 2 days wonder hobby."
         },
         "shotout": {
-          "text1": "Un grande ringraziamento a ",
-          "text2": " ed all' ",
-          "text3": " in generale per avermi fatto scoprire un mondo nuovo del web che prima ignoravo, senza il quale avrei fatto il solito blog palloso come tutti gli altri."
+          "text1": "Big shotout to ",
+          "text2": " and ",
+          "text3": " for making me find out about a new old web world that I didn't know about, wihout which I would have done the usual boring blog like anyone else."
         }
       }
     }

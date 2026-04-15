@@ -5,14 +5,14 @@ import Link from 'next/link';
 export default function Homepage() {
   const t = useTranslations('homepage.sections');
   return (
-    <section className="min-w-full flex flex-col h-full bg-primary/90 backdrop-blur-sm border-t border-b border-r rounded-r-2xl border-secondary p-4">
+    <section className="min-w-full flex flex-col h-full bg-primary/50 backdrop-blur-lg border-t border-b border-r rounded-r-2xl border-secondary/50 p-4">
       <div className="flex flex-col text-secondary gap-8 border-secondary-strong p-4 rounded-2xl">
-        <h4 className="font-bold text-3xl">{t('first.title')}</h4>
+        <h1 className="font-bold text-3xl">{t('first.title')}</h1>
         <p className="text-xl leading-5">
           {t('first.dsc')}
           <br />
           <br />
-          <span className='text-secondary-strong font-semibold'>{t('first.expectations.question')}</span>
+          <span className='text-secondary-strong text-2xl'>{t('first.expectations.question')}</span>
           <br />
           {t('first.expectations.answer')}
         </p>
@@ -20,13 +20,13 @@ export default function Homepage() {
           {t('first.shotout.text1')}
           <Link
             href={'https://neocities.org/'}
-            className="inline-block font-bold underline text-contrast-green underline-offset-2 animate-custom-pulse">
+            className="inline-block underline text-contrast-green underline-offset-2">
             neocities
           </Link>
           {t('first.shotout.text2')}
           <Link
             href={'https://indieweb.org/'}
-            className="inline-block font-bold underline text-contrast-green underline-offset-2 animate-custom-pulse">
+            className="inline-block underline text-contrast-green underline-offset-2">
             indie web
           </Link>
           {t('first.shotout.text3')}
