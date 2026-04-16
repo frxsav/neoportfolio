@@ -14,14 +14,14 @@ export default function ThemeToggle() {
       className="fixed right-[5%] p-2 cursor-pointer active:-translate-y-10 transition-all duration-300 -translate-y-15">
       {theme === 'dark' ? (
         <Image
-          src={'/images/lampadina-omori-spenta.webp'}
+          src={'/images/lampadina-omori-accesa.webp'}
           width={100}
           height={100}
           alt="Theme toggler image"
         />
       ) : (
         <Image
-          src={'/images/lampadina-omori-accesa.webp'}
+          src={'/images/lampadina-omori-spenta.webp'}
           width={100}
           height={100}
           alt="Theme toggler image"

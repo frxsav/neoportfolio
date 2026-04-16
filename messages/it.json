@@ -1,13 +1,19 @@
 {
   "sidebar": {
-    "homepage": "Homepage",
-    "about": "Chi Sono"
+    "navigation": {
+      "homepage": "Home",
+      "about": "Chi Sono",
+      "shrines": "Shrine",
+      "blog": "Blog",
+      "games": "Giochi",
+      "music": "Musica"
+    }
   },
   "homepage": {
     "title": "Titolo di prova",
     "sections": {
       "first": {
-        "title": "Hello World !",
+        "title": "Ciaaaaaaaaao",
         "dsc": "Lo scopo di tutto ciò è creare un mio spazio personale libero da algoritmi, standard, best practices e qualsiasi limitazione alla creatività del web design moderno.",
         "expectations": {
           "question": "Cosa aspettarsi?",

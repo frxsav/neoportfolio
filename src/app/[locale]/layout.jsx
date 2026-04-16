@@ -2,13 +2,15 @@ import { Footer, Toggles, Sidebar, SideInfo, BgCover } from '@/ui';
 import './globals.css';
 import GoogleAnalytics from '@/ui/components/GoogleAnalytics';
 import localFont from 'next/font/local';
-import { NextIntlClientProvider } from 'next-intl';
 import { ThemeProvider } from 'next-themes';
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 
 const euxoi = localFont({
   src: [
     {
-      path: '../../public/fonts/euxoi.ttf',
+      path: '../../../public/fonts/euxoi.ttf',
       weight: '400',
       declarations: [{ prop: 'font-stretch', value: 'condensed' }],
     },
@@ -18,14 +20,18 @@ const euxoi = localFont({
 const pokemon = localFont({
   src: [
     {
-      path: '../../public/fonts/pokemon.ttf',
+      path: '../../../public/fonts/pokemon.ttf',
       weight: '400',
     },
   ],
   variable: '--font-pokemon',
 });
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -33,10 +39,12 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute={'class'}>
           <BgCover />
           <GoogleAnalytics />
-          <Toggles />
-          <div className="grid grid-cols-12 border border-secondary-strong/50 relative z-20">
+          <div className="grid grid-cols-12 border border-secondary-strong/75 relative z-20">
             <Sidebar />
-            <NextIntlClientProvider>{children}</NextIntlClientProvider>
+            <NextIntlClientProvider>
+              <Toggles />
+              {children}
+            </NextIntlClientProvider>
             {/* <SideInfo /> */}
           </div>
         </ThemeProvider>

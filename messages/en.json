@@ -1,13 +1,19 @@
 {
   "sidebar": {
-    "homepage": "Homepage",
-    "about": "Chi Sono"
+    "navigation": {
+      "homepage": "Home",
+      "about": "About",
+      "shrines": "Shrines",
+      "blog": "Blog",
+      "games": "Games",
+      "music": "Music"
+    }
   },
   "homepage": {
     "title": "Test title",
     "sections": {
       "first": {
-        "title": "Hello World !",
+        "title": "Ciaaaaaaaaao",
         "dsc": "The goal here is to create my personal space, free from algorithms, standard, best practices or any creativity limit of modern web design world.",
         "expectations": {
           "question": "What to expect?",
