@@ -1,4 +1,4 @@
-import { Footer, Toggles, Sidebar, SideInfo, BgCover } from '@/ui';
+import { Toggles, Sidebar, BgCover } from '@/ui';
 import './globals.css';
 import GoogleAnalytics from '@/ui/components/GoogleAnalytics';
 import localFont from 'next/font/local';
@@ -27,6 +27,10 @@ const pokemon = localFont({
   variable: '--font-pokemon',
 });
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -40,10 +44,12 @@ export default async function RootLayout({ children, params }) {
           <BgCover />
           <GoogleAnalytics />
           <div className="grid grid-cols-12 border border-secondary-strong/75 relative z-20">
-            <Sidebar />
             <NextIntlClientProvider>
+              <Sidebar />
               <Toggles />
-              {children}
+              <main className="font-euxoi tracking-euxoi col-span-9">
+                {children}
+              </main>
             </NextIntlClientProvider>
             {/* <SideInfo /> */}
           </div>
