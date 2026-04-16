@@ -1,3 +1,3 @@
 export default function BgCover() {
-  return <div className="w-full h-full fixed top-0 right-0 bg-primary/20"/>;
+  return <div className="w-full h-full fixed top-0 right-0 bg-primary/50 z-10"/>;
 }

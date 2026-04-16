@@ -6,8 +6,8 @@
   --color-primary-strong: var(--primary-strong);
   --color-secondary: var(--secondary);
   --color-secondary-strong: var(--secondary-strong);
-  --color-contrast-yellow: var(--contrast-yellow);
-  --color-contrast-green: var(--contrast-green);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
   /* Fonts */
   --font-euxoi: var(--font-euxoi);
   --font-pokemon: var(--font-pokemon);
@@ -19,21 +19,21 @@
 :root {
   /* Light Mode */
   --primary: oklch(96.743% 0.02885 325.62);
-  --primary-strong: oklch(0.85 0.12 300.85);
+  --primary-strong: oklch(0.7374 0.1193 305.46);
   --secondary: oklch(2% 0.02481 298.696);
-  --secondary-strong: oklch(30% 0.1116 298.696);
+  --secondary-strong: oklch(27.316% 0.10063 311.611);
   --ctext: black;
   /* General */
-  --contrast-yellow: oklch(89.007% 0.1878 106.021);
-  --contrast-green: oklch(0.75 0.21369 141.67);
+  --green: oklch(0.8803 0.1348 140);
+  --yellow: oklch(0.8803 0.1348 86.06);
 }
 
 .dark {
   /* Dark mode */
   --primary: oklch(2% 0.02481 298.696);
-  --primary-strong: oklch(30% 0.1116 298.696);
+  --primary-strong: oklch(27.316% 0.10063 311.611);
   --secondary: oklch(96.743% 0.02885 325.62);
-  --secondary-strong: oklch(0.85 0.12 300.85);
+  --secondary-strong: oklch(0.7374 0.1193 305.46);
   --ctext: white;
 }
 

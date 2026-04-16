@@ -11,19 +11,19 @@ export default function ThemeToggle() {
       onClick={() => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
       }}
-      className="p-2 cursor-pointer">
+      className="fixed right-[5%] p-2 cursor-pointer active:-translate-y-10 transition-all duration-300 -translate-y-15">
       {theme === 'dark' ? (
         <Image
-          src={'/images/soul-eater-sun.webp'}
-          width={50}
-          height={50}
+          src={'/images/lampadina-omori-spenta.webp'}
+          width={100}
+          height={100}
           alt="Theme toggler image"
         />
       ) : (
         <Image
-          src={'/images/soul-eater-moon.webp'}
-          width={50}
-          height={50}
+          src={'/images/lampadina-omori-accesa.webp'}
+          width={100}
+          height={100}
           alt="Theme toggler image"
         />
       )}

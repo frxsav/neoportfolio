@@ -7,7 +7,7 @@
     "title": "Titolo di prova",
     "sections": {
       "first": {
-        "title": "Benvenuti sul mio sito !!",
+        "title": "Hello World !",
         "dsc": "Lo scopo di tutto ciò è creare un mio spazio personale libero da algoritmi, standard, best practices e qualsiasi limitazione alla creatività del web design moderno.",
         "expectations": {
           "question": "Cosa aspettarsi?",

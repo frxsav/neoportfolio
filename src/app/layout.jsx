@@ -29,12 +29,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon bg-[url('/images/bg.webp')] py-[10%] px-[15%] bg-no-repeat bg-fixed bg-cover bg-right`}>
+        className={`${euxoi.variable} ${pokemon.variable} tracking-pokemon font-pokemon bg-[url('/images/omori_wallpaper.webp')] py-[2%] px-[15%] bg-contain bg-fixed bg-center`}>
         <ThemeProvider attribute={'class'}>
           <BgCover />
           <GoogleAnalytics />
           <Toggles />
-          <div className="grid grid-cols-12">
+          <div className="grid grid-cols-12 border border-secondary-strong/50 relative z-20">
             <Sidebar />
             <NextIntlClientProvider>{children}</NextIntlClientProvider>
             {/* <SideInfo /> */}
