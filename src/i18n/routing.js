@@ -23,6 +23,10 @@ export const routing = defineRouting({
       en: '/music',
       it: '/musica',
     },
+    '/music-rec': {
+      en: '/rec/music-rec',
+      it: '/rec/musica-rec',
+    },
     // aggiungi tutte le pagine che vuoi localizzare
   },
 });

@@ -23,6 +23,24 @@ export const navigation = [
     name: 'music',
     href: '/music',
   },
+  {
+    name: 'recs',
+    href: '/recs',
+    items: [
+      {
+        name: 'music rec',
+        href: 'music-rec',
+      },
+      {
+        name: 'game rec',
+        href: 'game-rec',
+      },
+      {
+        name: 'anime rec',
+        href: 'anime-rec',
+      },
+    ],
+  },
 ];
 
 export const policies = {
