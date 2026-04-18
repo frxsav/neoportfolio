@@ -8,8 +8,8 @@ export const navigation = [
     href: '/about',
   },
   {
-    name: 'shrines',
-    href: '/shrines',
+    name: 'shrine',
+    href: '/shrine',
   },
   {
     name: 'blog',

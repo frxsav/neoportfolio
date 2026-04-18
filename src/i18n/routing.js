@@ -10,9 +10,9 @@ export const routing = defineRouting({
       en: '/about',
       it: '/chi-sono',
     },
-    '/shrines': {
-      en: 'shrines',
-      it: 'shrine',
+    '/shrine': {
+      en: '/shrine',
+      it: '/shrine',
     },
     '/blog': '/blog',
     '/games': {
@@ -20,8 +20,8 @@ export const routing = defineRouting({
       it: '/giochi',
     },
     '/music': {
-      en: 'music',
-      it: 'musica',
+      en: '/music',
+      it: '/musica',
     },
     // aggiungi tutte le pagine che vuoi localizzare
   },
