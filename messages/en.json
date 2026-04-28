@@ -27,5 +27,9 @@
         }
       }
     }
+  },
+  "games": {
+    "title": "Videogames",
+    "dsc": "Videogames I really really like, full backlog coming soon."
   }
 }

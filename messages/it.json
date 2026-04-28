@@ -27,5 +27,9 @@
         }
       }
     }
+  },
+  "games": {
+    "title": "Videogiochi",
+    "dsc": "Videogiochi che mi sono piaciuti tanto tantissimo, successivamente il mio backlog completo."
   }
 }

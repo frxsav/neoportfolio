@@ -56,3 +56,17 @@
     letter-spacing: -2px;
   }
 }
+
+.joypad {
+  animation: bob 1s steps(1) infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}

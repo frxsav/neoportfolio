@@ -22,12 +22,12 @@ export default function Sidebar() {
         {navigation.map((link, i) => (
           <li
             key={i}
-            className="p-2 text-secondary font-semibold flex gap-4 py-6 border-b last:border-none border-primary">
+            className="p-2 text-secondary font-semibold flex gap-4 py-4 border-b last:border-none border-primary">
             {link.items?.length > 0 ? (
               <div className="flex flex-col">
                 <div className="flex flex-row gap-2">
                   <div
-                    className={`text-yellow text-xs  transition-all duration-300 ${openItems[i] ? 'rotate-180' : 'rotate-90'}`}>
+                    className={`text-yellow text-[10px] transition-all duration-300 ${openItems[i] ? 'rotate-180' : 'rotate-90'}`}>
                     &#9650;
                   </div>
                   <p
@@ -46,12 +46,10 @@ export default function Sidebar() {
                 </ul>
               </div>
             ) : (
-              <div className="flex gap-2">
-                <div className="text-yellow rotate-90 text-xs">&#9650;</div>
-                <Link className="pl-2" href={link.href}>
-                  {t(`navigation.${link.name}`)}
-                </Link>
-              </div>
+              <Link className="text-sm flex gap-4" href={link.href}>
+                <div className="text-yellow rotate-90 text-[10px]">&#9650;</div>
+                {t(`navigation.${link.name}`)}
+              </Link>
             )}
           </li>
         ))}
