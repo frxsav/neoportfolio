@@ -30,6 +30,24 @@
   },
   "games": {
     "title": "Videogiochi",
-    "dsc": "Videogiochi che mi sono piaciuti tanto tantissimo, successivamente il mio backlog completo."
+    "dsc": "Videogiochi che mi sono piaciuti tanto tantissimo, successivamente il mio backlog completo.",
+    "list": {
+      "expedition_33": {
+        "title": "Clair Obscure: Expedition 33",
+        "dsc": "Uno dei migliori giochi dell'era moderna, prende un genere che sembrava abbandonato a se stesso, il \"Turn Based RPG\" e lo modernizza mischiandolo con elementi Soulslike rendendolo dinamico e soddisfacente. Destinato a cambiare le regole del genere di cui fa parte e magari quelle dell'industria videoludica."
+      },
+      "balatro": {
+        "title": "Balatro",
+        "dsc": "Giocato 1 anno dopo l'uscita, ho capito subito i motivi per cui la gente uscì di testa fin da subito e perchè venne preso seriamente in considerazione come gioco dell'anno 2024. Roguelite allo stato puro, una macchina di dopamina inesauribile che intrattiene per decine se non centinaia di ore, il classico gioco da numbers goes up ma che bomba."
+      },
+      "mewgenics": {
+        "title": "Mewgenics",
+        "dsc": "Speravo di amare Mewgenics perchè purtroppo non è stato così per The Binding Of Isaac, con questo titolo però McMillen mi ha conquistato, non subito devo ammettere, dopo 20 ore l'ho droppato per una settimana, ma dopo averlo ripreso in mano non sono riuscito a staccarmene più, difficile da descrivere, è un gioco da giocare e basta, esteticamente accattivante, in puro stile Isaac, gameplay divertente e pieno di combinazioni da perderci la testa, meccanica di breeding che aggiunge un ulteriore strato interessantissimo ad un gioco già pieno di cose fighe."
+      },
+      "hollow_knight": {
+        "title": "Hollow Knight",
+        "dsc": "Top del genere, miglior Metroidvania a mani basse, ambientazione ultrafiga, effetti sonori sublimi e gameplay divertentissimo, con scontri difficili e super gratificanti."
+      }
+    }
   }
 }

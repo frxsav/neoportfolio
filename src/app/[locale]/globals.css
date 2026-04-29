@@ -18,7 +18,7 @@
 
 :root {
   /* Light Mode */
-  --primary: oklch(96.743% 0.02885 325.62);
+  --primary: oklch(87.61% 0.0001 271.152);
   --primary-strong: oklch(0.7374 0.1193 305.46);
   --secondary: oklch(2% 0.02481 298.696);
   --secondary-strong: oklch(27.316% 0.10063 311.611);
@@ -32,7 +32,7 @@
   /* Dark mode */
   --primary: oklch(2% 0.02481 298.696);
   --primary-strong: oklch(27.316% 0.10063 311.611);
-  --secondary: oklch(96.743% 0.02885 325.62);
+  --secondary: oklch(87.61% 0.0001 271.152);
   --secondary-strong: oklch(0.7374 0.1193 305.46);
   --ctext: white;
 }
