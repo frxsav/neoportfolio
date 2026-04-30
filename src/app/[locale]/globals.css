@@ -8,6 +8,7 @@
   --color-secondary-strong: var(--secondary-strong);
   --color-yellow: var(--yellow);
   --color-green: var(--green);
+  --color-ctext: var(--ctext);
   /* Fonts */
   --font-euxoi: var(--font-euxoi);
   --font-pokemon: var(--font-pokemon);
@@ -57,16 +58,30 @@
   }
 }
 
-.joypad {
-  animation: bob 1s steps(1) infinite;
+.animate-bob-1 {
+  animation: bob-1 1s steps(1) infinite;
 }
 
-@keyframes bob {
+@keyframes bob-1 {
   0%,
   100% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(3px);
+    transform: translateY(1px);
+  }
+}
+
+.animate-bob-2 {
+  animation: bob-2 1s steps(1) infinite;
+}
+
+@keyframes bob-2 {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(2px);
   }
 }

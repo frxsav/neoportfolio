@@ -17,29 +17,32 @@ export const navigation = [
     name: 'blog',
     href: '/blog',
   },
+  // {
+  //   name: 'games',
+  //   href: '/games',
+  // },
+  // {
+  //   name: 'music',
+  //   href: '/music',
+  // },
   {
-    name: 'games',
-    href: '/games',
-  },
-  {
-    name: 'music',
-    href: '/music',
-  },
-  {
-    name: 'recs',
-    href: '/recs',
+    name: 'media',
+    href: '/media',
     items: [
       {
-        name: 'music rec',
-        href: 'music-rec',
+        name: 'music',
+        href: 'music',
+        icon: '/gifs/mp3.gif',
       },
       {
-        name: 'game rec',
-        href: 'game-rec',
+        name: 'videogames',
+        href: 'videogames',
+        icon: '/gifs/nintendo.gif',
       },
       {
-        name: 'anime rec',
-        href: 'anime-rec',
+        name: 'anime',
+        href: 'anime',
+        icon: '/gifs/totoro.gif',
       },
     ],
   },

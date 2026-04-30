@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { navigation } from '@/lib/data';
 import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 
 import { useState } from 'react';
 
@@ -32,15 +33,24 @@ export default function Sidebar() {
                   </div>
                   <p
                     onClick={() => toggleItem(i)}
-                    className="cursor-pointer font-pokemon tracking-pokemon pl-2">
+                    className="cursor-pointer font-pokemon text-secondary text-sm tracking-pokemon pl-2">
                     {t(`navigation.${link.name}`)}
                   </p>
                 </div>
                 <ul
                   className={`flex flex-col gap-2 overflow-hidden ${openItems[i] ? 'max-h-96 pt-4' : 'max-h-0'} transition-all duration-300`}>
                   {link.items.map((item, j) => (
-                    <li key={j}>
-                      <Link href={item.href}>{item.name}</Link>
+                    <li key={j} className='flex gap-2'>
+                      <Image
+                        src={item.icon}
+                        width={20}
+                        height={20}
+                        alt={`${item.name} icon`}
+                        className='animate-bob-1'
+                      />
+                      <Link href={item.href} className="text-xs">
+                        {t(`navigation.${item.name}`)}
+                      </Link>
                     </li>
                   ))}
                 </ul>

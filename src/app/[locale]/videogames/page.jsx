@@ -10,15 +10,15 @@ export default function Games() {
       <div className="flex items-center gap-2">
         <Image
           src={'/images/videogames/joypad.webp'}
-          className="joypad"
+          className="animate-bob-2"
           width={48}
           height={48}
           alt="Joypad"
         />
-        <h1 className="text-3xl text-secondary">{t('title')}</h1>
+        <h1 className="text-3xl text-ctext">{t('title')}</h1>
         <Image
           src={'/images/videogames/joypad.webp'}
-          className="joypad"
+          className="animate-bob-2"
           width={48}
           height={48}
           alt="Joypad"
@@ -29,18 +29,18 @@ export default function Games() {
         {videogames.map((item, i) => (
           <div
             key={i}
-            className="bg-primary/30 backdrop-blur-xs border border-secondary/20 p-4 pb-16 relative">
+            className="bg-primary/30 group backdrop-blur-xs border border-dashed border-secondary/30 rounded-xl p-4 pb-16 relative transition-all duration-300 hover:bg-primary/60 hover:border-secondary/60">
             <Image
               src={item.cover}
               width={150}
               height={225}
               alt={t(`list.${item.id}.title`) + ' cover'}
-              className="float-left object-cover mr-6 mt-2"
+              className="float-left object-cover mr-6 my-2 border border-secondary/30 rounded-xl transition-all duration-300 group-hover:scale-105"
             />
             <h2 className="text-xl font-semibold pb-2">
               {t(`list.${item.id}.title`)}
             </h2>
-            <div className="flex gap-2 mb-4 w-fit">
+            <div className="flex gap-2 mb-2 w-fit">
               {Array.from({ length: 5 }, (_, i) => i + 1).map((i) =>
                 i <= Math.floor(item.rating) ? (
                   <FaStar key={i} className="text-yellow" />
@@ -52,6 +52,16 @@ export default function Games() {
                 ),
               )}
             </div>
+            <div className="flex gap-2 pb-6">
+              {item.genre.map((genre, j) => (
+                <p
+                  className="px-3 bg-primary/50 border border-secondary/30 rounded-full w-fit cursor-default hover:scale-105 transition-all duration-300"
+                  key={j}>
+                  {genre}
+                </p>
+              ))}
+            </div>
+
             <p>{t(`list.${item.id}.dsc`)}</p>
           </div>
         ))}

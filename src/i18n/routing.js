@@ -15,17 +15,17 @@ export const routing = defineRouting({
       it: '/shrine',
     },
     '/blog': '/blog',
-    '/games': {
-      en: '/games',
-      it: '/giochi',
+    '/videogames': {
+      en: '/videogames',
+      it: '/videogiochi',
     },
     '/music': {
       en: '/music',
       it: '/musica',
     },
-    '/music-rec': {
-      en: '/rec/music-rec',
-      it: '/rec/musica-rec',
+    '/anime': {
+      en: '/anime',
+      it: '/anime',
     },
     // aggiungi tutte le pagine che vuoi localizzare
   },

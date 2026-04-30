@@ -5,9 +5,10 @@
       "about": "About",
       "shrine": "Shrine",
       "blog": "Blog",
-      "games": "Games",
+      "videogames": "Videogames",
       "music": "Music",
-      "recs": "Recs"
+      "anime": "Anime",
+      "media": "Media"
     }
   },
   "homepage": {
