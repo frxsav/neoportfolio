@@ -1,9 +1,9 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { videogames } from '@/lib/data';
-import { FaStar, FaStarHalf, FaRegStar } from 'react-icons/fa';
+import { FaStar, FaStarHalf } from 'react-icons/fa';
 
-export default function Games() {
+export default function Videogames() {
   const t = useTranslations('games');
   return (
     <section className="min-w-full flex flex-col h-full bg-primary/75 items-center py-4 gap-4">

@@ -1,10 +1,12 @@
 import { useTranslations } from 'next-intl';
 
-export default function Music() {
+export default function YoutubeChannels() {
   const t = useTranslations('sidebar');
   return (
     <section className="min-w-full flex flex-col h-full bg-primary/75 items-center py-4 gap-4">
-      <h1 className="text-3xl text-ctext">{t(`navigation.music`)}</h1>
+      <h1 className="text-3xl text-ctext">
+        {t(`navigation.youtube_channels`)}
+      </h1>
     </section>
   );
 }

@@ -17,14 +17,6 @@ export const navigation = [
     name: 'blog',
     href: '/blog',
   },
-  // {
-  //   name: 'games',
-  //   href: '/games',
-  // },
-  // {
-  //   name: 'music',
-  //   href: '/music',
-  // },
   {
     name: 'media',
     href: '/media',
@@ -42,6 +34,16 @@ export const navigation = [
       {
         name: 'anime',
         href: 'anime',
+        icon: '/gifs/totoro.gif',
+      },
+      {
+        name: 'manga',
+        href: 'manga',
+        icon: '/gifs/totoro.gif',
+      },
+      {
+        name: 'youtube_channels',
+        href: 'youtube-channels',
         icon: '/gifs/totoro.gif',
       },
     ],
