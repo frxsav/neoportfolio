@@ -1,6 +1,7 @@
 {
   "sidebar": {
     "navigation": {
+      "navigation": "Navigation",
       "homepage": "Home",
       "about": "About",
       "shrine": "Shrine",
@@ -18,7 +19,9 @@
     "sections": {
       "first": {
         "title": "Ciaaaaaaaaao",
-        "dsc": "The goal here is to create my personal space, free from algorithms, standard, best practices or any creativity limit of modern web design world.",
+        "presentation": "Ciao, I'm Francesco from ",
+        "dsc": "This will be my personal corner of the web where I'll share all my interests on, from the deepest to the most volatile. Since I didn't experience the early 2000s web, I've decided to experience it through this website, inspired by the old internet and ",
+        "dsc2": " philosophy, where boring and minimalistics modern websites standard didn't exist yet.",
         "expectations": {
           "question": "What to expect?",
           "answer": "A deep dive into my brain. I'll put whatever I'll feel to put in here, from content about videogames or anime to any new 2 days wonder hobby."

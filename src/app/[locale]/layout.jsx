@@ -43,7 +43,7 @@ export default async function RootLayout({ children, params }) {
         <ThemeProvider attribute={'class'}>
           <BgCover />
           <GoogleAnalytics />
-          <div className="grid grid-cols-12 border border-secondary-strong/75 relative z-20">
+          <div className="grid grid-cols-12 relative z-20 rounded-xl">
             <NextIntlClientProvider>
               <Sidebar />
               <Toggles />

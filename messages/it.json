@@ -1,6 +1,7 @@
 {
   "sidebar": {
     "navigation": {
+      "navigation": "Navigazione",
       "homepage": "Home",
       "about": "Chi Sono",
       "shrine": "Shrine",
@@ -18,10 +19,12 @@
     "sections": {
       "first": {
         "title": "Ciaaaaaaaaao",
-        "dsc": "Lo scopo di tutto ciò è creare un mio spazio personale libero da algoritmi, standard, best practices e qualsiasi limitazione alla creatività del web design moderno.",
+        "presentation": "Ciao, sono Francesco da ",
+        "dsc": "Questo sarà il mio personale covo nel web dove metterò tutti i miei interessi, dai più viscerali ai più futili e passeggeri. Non avendo vissuto internet nei primi anni 2000 ho deciso di viverli ora con questo sito ispirato ai tempi andati di internet ed alla filosofia di ",
+        "dsc2": " dove i pallosi e minimalisti standard moderni  del web design non erano neanche un remoto pensiero.",
         "expectations": {
           "question": "Cosa aspettarsi?",
-          "answer": "Un deep dive nel mio cervello, metterò tutto quello che mi andrà di mettere, da contenuti sui videogiochi, sugli anime a qualsiasi nuovo hobby che durerà 2 giorni."
+          "answer": "Boh che ne so ci saranno sicuramente le mie opinioni su i media che consumo, quindi videogiochi, anime, manga e quant'altro; farò probabilmente qualche mini guida di programmazione, niente di troppo avanzato solo cose basilari e sfiziose; troverete  le fonti sulle risorse che ho utilizzato e tanta altra roba che mi verrà in mente in futuro glhf ciaaa."
         },
         "shotout": {
           "text1": "Grazie a ",

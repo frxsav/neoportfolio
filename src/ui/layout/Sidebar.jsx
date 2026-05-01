@@ -15,15 +15,13 @@ export default function Sidebar() {
     setOpenItems((prev) => ({ ...prev, [index]: !prev[index] }));
   };
   return (
-    <div className="flex flex-col col-span-3 p-4 bg-primary-strong/50 backdrop-blur-md border-r border-secondary-strong/50 overflow-hidden">
-      <p className="uppercase font-semibold font-pokemon tracking-pokemon bg-primary/75 backdrop-blur-sm text-ctext p-4 rounded-t-xl border-2 border-b-0 border-primary">
-        Navigazione
+    <div className="flex flex-col col-span-3 bg-primary-strong/50 backdrop-blur-md border border-secondary-strong/50 overflow-hidden rounded-xl mr-4 h-fit">
+      <p className="uppercase text-sm font-semibold font-pokemon tracking-pokemon bg-primary/75 backdrop-blur-sm text-ctext p-4 rounded-t-xl border-2 border-b-0 border-primary">
+        {t('navigation.navigation')}
       </p>
-      <ul className="flex flex-col border-2 border-t-0 border-primary">
+      <ul className="flex flex-col">
         {navigation.map((link, i) => (
-          <li
-            key={i}
-            className="text-secondary font-semibold flex gap-4 border-b last:border-none border-primary/30">
+          <li key={i} className="text-secondary font-semibold flex gap-4 last:border-0 border-b border-b-secondary/30">
             {link.items?.length > 0 ? (
               <div className="flex flex-col w-full">
                 <div
@@ -38,12 +36,12 @@ export default function Sidebar() {
                   </p>
                 </div>
                 <ul
-                  className={`w-full flex flex-col gap-1 overflow-hidden ${openItems[i] ? 'max-h-96 pt-4' : 'max-h-0'} transition-all duration-300`}>
+                  className={`w-full flex flex-col gap-1 overflow-hidden ${openItems[i] ? 'max-h-96' : 'max-h-0'} transition-all duration-300`}>
                   {link.items.map((item, j) => (
                     <li key={j} className="rounded-sm w-full">
                       <Link
                         href={item.href}
-                        className="text-xs flex pl-2 py-2 gap-2 transition-all duration-300 hover:bg-secondary hover:text-primary">
+                        className="text-xs flex pl-4 py-2 gap-2 transition-all duration-300 hover:bg-secondary hover:text-primary">
                         <Image
                           src={item.icon}
                           width={20}

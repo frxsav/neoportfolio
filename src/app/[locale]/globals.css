@@ -19,21 +19,21 @@
 
 :root {
   /* Light Mode */
-  --primary: oklch(87.61% 0.0001 271.152);
+  --primary: oklch(94.215% 0.01032 310.795);
   --primary-strong: oklch(0.7374 0.1193 305.46);
   --secondary: oklch(2% 0.02481 298.696);
-  --secondary-strong: oklch(27.316% 0.10063 311.611);
+  --secondary-strong: oklch(0.3967 0.1894 300.32);
   --ctext: black;
   /* General */
-  --green: oklch(0.8803 0.1348 140);
-  --yellow: oklch(0.8803 0.1348 86.06);
+  --green: oklch(0.6721 0.148 161.33);
+  --yellow: oklch(0.8301 0.1592 79.93);
 }
 
 .dark {
   /* Dark mode */
   --primary: oklch(2% 0.02481 298.696);
-  --primary-strong: oklch(27.316% 0.10063 311.611);
-  --secondary: oklch(87.61% 0.0001 271.152);
+  --primary-strong: oklch(0.3967 0.1894 300.32);
+  --secondary: oklch(94.215% 0.01032 310.795);
   --secondary-strong: oklch(0.7374 0.1193 305.46);
   --ctext: white;
 }
@@ -43,7 +43,7 @@
   span {
     color: var(--ctext);
     font-family: var(--font-euxoi);
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
 
   h1,

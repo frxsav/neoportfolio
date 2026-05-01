@@ -50,6 +50,33 @@ export const navigation = [
   },
 ];
 
+export const blinkies = [
+  {
+    title: 'Responsive blinky',
+    src: '/images/blinkies/blinky1.png',
+  },
+  {
+    title: 'Visual Studio blinky',
+    src: '/images/blinkies/blinky2.png',
+  },
+  {
+    title: 'Trick or treat blinky',
+    src: '/images/blinkies/blinky3.gif',
+  },
+  {
+    title: 'Pirate blinky',
+    src: '/images/blinkies/blinky4.gif',
+  },
+  {
+    title: 'Responsive blinky',
+    src: '/images/blinkies/blinky5.png',
+  },
+  {
+    title: 'blinky',
+    src: '/images/blinkies/blinky6.png',
+  },
+];
+
 export const videogames = [
   {
     id: 'expedition_33',
