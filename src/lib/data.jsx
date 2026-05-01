@@ -29,7 +29,7 @@ export const navigation = [
       {
         name: 'videogames',
         href: 'videogames',
-        icon: '/gifs/nintendo.gif',
+        icon: '/gifs/ps1.gif',
       },
       {
         name: 'anime',
@@ -39,12 +39,12 @@ export const navigation = [
       {
         name: 'manga',
         href: 'manga',
-        icon: '/gifs/totoro.gif',
+        icon: '/gifs/book.gif',
       },
       {
         name: 'youtube_channels',
         href: 'youtube-channels',
-        icon: '/gifs/totoro.gif',
+        icon: '/gifs/tv.gif',
       },
     ],
   },

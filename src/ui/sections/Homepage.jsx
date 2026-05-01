@@ -31,7 +31,7 @@ export default function Homepage() {
           </Link>
           {t('first.dsc2')}
         </p>
-        <div className="grid grid-cols-6 justify-items-center items-center">
+        <div className="grid grid-cols-6 justify-items-center items-center border-t border-b border-dashed py-6 border-secondary/50">
           {blinkies.map((blinky, i) => (
             <Image
               width={88}
@@ -39,6 +39,7 @@ export default function Homepage() {
               src={blinky.src}
               alt={blinky.title}
               key={i}
+              className='hover:scale-110 transition-all duration-300'
             />
           ))}
         </div>
@@ -51,8 +52,6 @@ export default function Homepage() {
           </span>
         </div>
       </div>
-      <div className="h-1 w-full bg-yellow mt-4" />
-      <div className="h-1 w-full bg-green mt-4" />
     </section>
   );
 }
